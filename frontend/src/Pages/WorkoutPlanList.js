@@ -4,7 +4,7 @@ import axios from 'axios';
 const WorkoutPlanList = () => {
   const [workoutPlans, setWorkoutPlans] = useState([]);
   const [showUpdateForm, setShowUpdateForm] = useState(false);
-  const [updatedWorkoutPlan, setUpdatedWorkoutPlan] = useState({});
+  const [updatedWorkoutPlan, setUpdatedWorkoutPlan] = useState({});//jfff
   const [updateId, setUpdateId] = useState('');
 
   useEffect(() => {
@@ -13,10 +13,10 @@ const WorkoutPlanList = () => {
         const response = await axios.get('http://localhost:9000/api/workout-plans');
         setWorkoutPlans(response.data);
       } catch (error) {
-        console.error('Error fetching workout plans:', error);//fff
+        console.error('Error fetching workout plans:', error);
       }
     };
-    fetchWorkoutPlans();//hhhh
+    fetchWorkoutPlans();
   }, []);
 
   const handleDelete = async (id) => {
