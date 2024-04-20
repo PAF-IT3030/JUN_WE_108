@@ -13,10 +13,10 @@ const WorkoutPlanList = () => {
         const response = await axios.get('http://localhost:9000/api/workout-plans');
         setWorkoutPlans(response.data);
       } catch (error) {
-        console.error('Error fetching workout plans:', error);
+        console.error('Error fetching workout plans:', error);//fff
       }
     };
-    fetchWorkoutPlans();
+    fetchWorkoutPlans();//hhhh
   }, []);
 
   const handleDelete = async (id) => {
@@ -25,7 +25,7 @@ const WorkoutPlanList = () => {
       setWorkoutPlans(workoutPlans.filter((workoutPlan) => workoutPlan.id !== id));
       window.alert('Workout plan deleted!!');
     } catch (error) {
-      console.error('Error deleting workout plan:', error);//yyyy
+      console.error('Error deleting workout plan:', error);
     }
   };
 
