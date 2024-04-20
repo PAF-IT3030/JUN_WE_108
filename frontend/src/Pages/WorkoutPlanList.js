@@ -23,9 +23,9 @@ const WorkoutPlanList = () => {
     try {
       await axios.delete(`http://localhost:9000/api/workout-plans/${id}`);
       setWorkoutPlans(workoutPlans.filter((workoutPlan) => workoutPlan.id !== id));
-      window.alert('Workout plan deleted!!');//gggg
+      window.alert('Workout plan deleted!!');
     } catch (error) {
-      console.error('Error deleting workout plan:', error);
+      console.error('Error deleting workout plan:', error);//yyyy
     }
   };
 
