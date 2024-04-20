@@ -21,7 +21,7 @@
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
-  color: white;
+  color: rgb(255, 255, 255);
 }
 
 .App-link {
@@ -42,13 +42,15 @@
   justify-content: center;
   align-items: center;
   height: 100vh;
+  background-color: #001f3f; 
+  color: #fff;
 }
 
 .form {
   width: 100%; 
   max-width: 600px; 
   padding: 30px;
-  background-color: #fff; 
+  background-color: #ffff; 
   box-shadow: none; 
 }
 
@@ -106,7 +108,8 @@
   padding: 20px;
   border: 1px solid #ddd;
   border-radius: 4px;
-  background-color: #f5f5f5;
+  background-color: #143f68;
+  color: #fff;
 }
 
 .workout-plan-title {
@@ -121,6 +124,8 @@
   padding: 15px;
   margin-bottom: 10px;
   border-bottom: 1px solid #ddd;
+  background-color: #001f3f; 
+  color: #fff;
 }
 
 .workout-plan strong {
