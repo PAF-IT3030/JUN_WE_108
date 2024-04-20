@@ -4,7 +4,7 @@ import axios from 'axios';
 const WorkoutPlanList = () => {
   const [workoutPlans, setWorkoutPlans] = useState([]);
   const [showUpdateForm, setShowUpdateForm] = useState(false);
-  const [updatedWorkoutPlan, setUpdatedWorkoutPlan] = useState({});//jfff
+  const [updatedWorkoutPlan, setUpdatedWorkoutPlan] = useState({});
   const [updateId, setUpdateId] = useState('');
 
   useEffect(() => {
