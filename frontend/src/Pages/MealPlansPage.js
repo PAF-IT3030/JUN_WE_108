@@ -68,7 +68,7 @@ const MealPlansPage = () => {
               placeholder={` Nutrition ${index + 1}`}
             />
           ))}
-          <label>Portion:</label>
+          <label>:</label>
           <input type="text" value={portion} onChange={(e) => setPortion(e.target.value)} placeholder=" Enter portion" />
           <button type="button" onClick={handleAddNutritions}>Add Meal plan</button>
           <button type="submit">Create new meal Plan</button>
