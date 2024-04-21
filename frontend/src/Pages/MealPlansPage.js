@@ -27,7 +27,7 @@ const MealPlansPage = () => {
     }
 
     try {
-      await axios.post('http://localhost:9001/api/meal-plans', {
+      await axios.post('http://localhost:9001/api/meal-plans', {ggg
         userId: 'user123',
         plan,
         recipe,
