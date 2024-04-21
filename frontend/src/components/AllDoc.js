@@ -56,7 +56,9 @@ export default function AllDoc() {
                                     <Link to="/doc" className="nav-link active text-white" aria-current="page">Dashboard</Link>
                                 </li>
 
-                         
+                                <li className="nav-item">
+                                    <Link to="/doc/doc-add" className="nav-link active text-white" aria-current="page">Add New WorkOut</Link>
+                                </li>
                             </ul>
                         </div>
                     </div>
