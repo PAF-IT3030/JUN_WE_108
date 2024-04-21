@@ -32,7 +32,7 @@ function AddDoc() {
 
 
         }
-
+        console.log(newDoc);
 
         axios.post("http://localhost:8070/api/addworkoutplan", newDoc).then(() => {
             Swal.fire({
