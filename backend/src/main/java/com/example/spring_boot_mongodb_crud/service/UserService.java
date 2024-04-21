@@ -21,7 +21,7 @@ public class UserService {
         user.setTitle(userRequest.getTitle());
         user.setDescription(userRequest.getDescription());
         user.setExercises(userRequest.getExercises());
-      
+        userRepo.save(user);
     }
 
     public List<User> getWorkouts() {
