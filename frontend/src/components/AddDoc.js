@@ -13,7 +13,7 @@ function AddDoc() {
     const [id, setId] = useState("");
     const [title, setTitle] = useState("");
     const [description, setDescription] = useState("");
-    const [exercises, setExercises] = useState("");
+
 
 
 
