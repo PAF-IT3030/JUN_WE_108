@@ -32,7 +32,15 @@ export default function AllDoc() {
 
     return (
 
+        <div style={{
+            background: "#010117",
+            backgroundSize: 'cover',
+            minHeight: '100vh',
+            backgroundPosition: 'center center',
+            backgroundRepeat: 'no-repeat',
+            backgroundAttachment: 'fixed',
 
+        }}>
             <Header />
 
 
