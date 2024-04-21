@@ -11,7 +11,7 @@ const App = () => {
         <Route path="/api/meal-plans" element={<MealPlansPage />} />
         <Route path="/meal-plan-list" element={<MealPlanList />} />
       </Routes>
-    </Router>
+    </Router>ghghghgh
   );
 };
 
