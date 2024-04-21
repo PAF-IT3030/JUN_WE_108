@@ -28,7 +28,7 @@ function AddDoc() {
             id: uuidv4(),
             title,
             description,
-     
+            exercises,
 
 
         }
