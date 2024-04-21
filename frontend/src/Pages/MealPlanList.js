@@ -47,7 +47,8 @@ const MealPlanList = () => {
       console.error('Error updating meal plan:', error);
     }
   };
-  
+
+  console.log(mealPlans)
 
   return (
     <div className="meal-plan-list">
@@ -56,10 +57,10 @@ const MealPlanList = () => {
         {mealPlans.map((mealPlan) => (
           <li key={mealPlan.id} className="meal-plan">
             <div>
-              <strong>Plan:</strong> {mealPlan.plan}
+              <strong>Plan:</strong> {mealPlan.title}
             </div>
             <div>
-              <strong>Receipe:</strong> {mealPlan.receipe}
+              <strong>Receipe:</strong> {mealPlan.description}
             </div>
             <div>
               <strong>Nutritions:</strong>
@@ -80,14 +81,14 @@ const MealPlanList = () => {
           <h2 >Update Meal Plan</h2>
           <input
             type="text"
-            value={updatedMealPlan.plan}
-            onChange={(e) => setUpdatedMealPlan({ ...updatedMealPlan, plan: e.target.value })}
+            value={updatedMealPlan.title}
+            onChange={(e) => setUpdatedMealPlan({ ...updatedMealPlan, title: e.target.value })}
           />&nbsp;&nbsp;
           <input
             type="text"
-            value={updatedMealPlan.recipe}
-            onChange={(e) => setUpdatedMealPlan({ ...updatedMealPlan, recipe: e.target.value })}
-          />&nbsp;&nbsp;
+            value={updatedMealPlan.description}
+            onChange={(e) => setUpdatedMealPlan({ ...updatedMealPlan, description: e.target.value })}
+          />
           <input
             type="text"
             value={updatedMealPlan.routines}
