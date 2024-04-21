@@ -41,7 +41,7 @@ const MealPlansPage = () => {
       setPortion('');
       setShowSuccessMessage(true);
       setTimeout(() => {
-        setShowSuccessMessage(false);
+        setNutritions(false);
       }, 3000);
     } catch (error) {
       console.error('Error creating meal plan:', error);
