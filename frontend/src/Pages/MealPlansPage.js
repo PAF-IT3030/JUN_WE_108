@@ -51,7 +51,7 @@ const MealPlansPage = () => {
   return (
     <div className="container">
       <div className="form">
-        <h1>Create Meal Plan</h1>
+        <h1>Create Plan</h1>
         {showSuccessMessage && <div className="success-message">Meal plan added successfully!</div>}
         <form onSubmit={handleSubmit} className="form">
           <label>Plan:</label>
