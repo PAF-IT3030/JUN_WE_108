@@ -81,9 +81,7 @@ function AddDoc() {
                 </div>
             </nav>
 
-            <div className="col-lg-9-mt-2 mb-2 p-3 pt-4 text-white">
-                <h1 style={{ textAlign: "left", paddingLeft: "90px" }}>Add New WorkOut</h1>
-            </div>
+         
 
             <div className="container shadow-lg p-3 mb-5  rounded" style={{ background: "#04052e" }}>
 
