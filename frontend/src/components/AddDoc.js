@@ -60,7 +60,7 @@ function AddDoc() {
             backgroundAttachment: 'fixed',
 
         }}>
-            <Header />
+        
 
             <nav className="navbar navbar-expand-lg " style={{ backgroundColor: "#072b52" }}>
                 <div className="container-fluid">
