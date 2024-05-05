@@ -51,7 +51,7 @@ const MealPlansPage = () => {
       <div className="form">
         <h1>Create Meal Plan</h1>
         {showSuccessMessage && <div className="success-message">Meal plan added successfully!</div>}
-        <form onSubmit={handleSubmit} className="form">
+        <form onSubmit={handleSubmit} >
           <label>Plan:</label>
           <input type="text" value={title} onChange={(e) => setTitle(e.target.value)} placeholder=" Enter Plan" />
           <label>Receipe:</label>

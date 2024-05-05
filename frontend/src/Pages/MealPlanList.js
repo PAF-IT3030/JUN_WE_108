@@ -51,8 +51,9 @@ const MealPlanList = () => {
   console.log(mealPlans)
 
   return (
+    
     <div className="meal-plan-list">
-      <h1 className="meal-plan-title">Your Meal Plans</h1>
+      <center><h1 className="meal-plan-title">Your Meal Plans</h1></center>
       <ul>
         {mealPlans.map((mealPlan) => (
           <li key={mealPlan.id} className="meal-plan">
