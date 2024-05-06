@@ -42,6 +42,7 @@ function AddPost() {
   };
 
   return (
+    <div className="container">
       <div className="row justify-content-center">
         <div className="col-md-6">
           <h1>Add Workout Details</h1>
@@ -49,7 +50,6 @@ function AddPost() {
             <div className="form-group">
               <label for="studentname">Date</label>
               <input
-                type="date"
                 className="form-control"
                 id="studentname"
                 value={studentname}
