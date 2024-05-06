@@ -286,7 +286,7 @@ select {
     height: 2em;
     fill: hsl(var(--white));
 }
-
+/* Navbar Items */
 .navbar-item {
     padding: 0 .5em;
     width: 100%;
