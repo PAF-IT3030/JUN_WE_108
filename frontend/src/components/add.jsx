@@ -24,13 +24,13 @@ function AddPost() {
         studentname,
         studentaddress,
         status,
+        noofpushups,
         randistance,
         weightlifted,
       });
       alert("Student Added Successfully!");
       setStudentName("");
       setStudentAddress("");
-      setStatus("");
       setnoofpushups("");
       setrandistance("");
       setweightlifted("");
