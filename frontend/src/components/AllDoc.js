@@ -66,7 +66,12 @@ export default function AllDoc() {
 
 
 
-          
+                <div className="col-lg-9-mt-2 mb-2 p-3 pt-4 text-white">
+                    <h1 style={{ textAlign: "left", paddingLeft: "90px" }}>Dashboard</h1>
+                </div>
+                <div style={{ textAlign: "right", paddingRight: "100px", paddingBottom: "20px" }}>
+                    <button className="btn btn-success btn-lg float-right"><a href="/doc/doc-add" style={{ textDecoration: 'none', color: "white" }}>+ Add New WorkOut</a></button>
+                </div>
 
 
 
