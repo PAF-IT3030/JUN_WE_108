@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 
-const WorkoutPlanList = () => {
+const AllWorkoutPlans = () => {
   const [workoutPlans, setWorkoutPlans] = useState([]);
   const [showUpdateForm, setShowUpdateForm] = useState(false);
   const [updatedWorkoutPlan, setUpdatedWorkoutPlan] = useState({});
@@ -68,8 +68,7 @@ const WorkoutPlanList = () => {
                 ))}
               </ul>
             </div>
-            <button onClick={() => handleDelete(workoutPlan.id)}>Delete</button>
-            <button onClick={() => handleUpdate(workoutPlan)} style={{ backgroundColor: '#28a745', color: '#fff' }}>Update</button>
+            
           </li>
         ))}
       </ul>
@@ -92,13 +91,13 @@ const WorkoutPlanList = () => {
             value={updatedWorkoutPlan.routines}
             onChange={(e) => setUpdatedWorkoutPlan({ ...updatedWorkoutPlan, routines: e.target.value })}
           />
-          <button onClick={handleSubmitUpdate}>Submit Update</button>
+          
         </div>
       )}
     </div>
   );
 };
 
-export default WorkoutPlanList;
+export default AllWorkoutPlans;
 
 

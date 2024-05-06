@@ -50,7 +50,7 @@ const WorkoutPlansPage = () => {
       <div className="form">
         <h1>Create Workout Plan</h1>
         {showSuccessMessage && <div className="success-message">Workout plan added successfully!</div>}
-        <form onSubmit={handleSubmit} className="form">
+        <form onSubmit={handleSubmit}>
           <label>Title:</label>
           <input type="text" value={title} onChange={(e) => setTitle(e.target.value)} placeholder=" Enter title" />
           <label>Description:</label>
@@ -67,14 +67,14 @@ const WorkoutPlansPage = () => {
           ))}
           <button type="button" onClick={handleAddRoutine}>Add Routine</button>
           <button type="submit">Create Workout Plan</button>
-          <Link to="/workout-plan-list" type='button' className="button">Go to Workout Plan List</Link>
+          
         </form>
       </div>
     </div>
   );
 };
 
-export default WorkoutPlansPage;
+export default WorkoutPlansPage;//
 
 
 
