@@ -59,6 +59,7 @@ function AddPost() {
               />
             </div>
             <div className="form-group">
+              <label for="studentaddress">Caption</label>
               <input
                 type="text"
                 className="form-control"
@@ -73,7 +74,6 @@ function AddPost() {
               <select
                 className="form-control"
                 id="status"
-                value={status}
                 onChange={(event) => setStatus(event.target.value)}
                 required
               >
