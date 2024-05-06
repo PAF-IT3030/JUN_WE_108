@@ -31,7 +31,6 @@ function AddPost() {
       alert("Student Added Successfully!");
       setStudentName("");
       setStudentAddress("");
-      setStatus("");
       setnoofpushups("");
       setrandistance("");
       setweightlifted("");
@@ -119,7 +118,9 @@ function AddPost() {
                 required
               />
             </div>
-          
+            <button type="submit" className="btn btn-primary mt-4">
+              Add Workout
+            </button>
           </form>
           {error && <div className="alert alert-danger">{error}</div>}
         </div>
