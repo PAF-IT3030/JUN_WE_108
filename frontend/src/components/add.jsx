@@ -79,6 +79,7 @@ function AddPost() {
                 required
               >
                 <option value="">Select Type</option>
+                <option value="Type 01">Type 01</option>
                 <option value="Type 02">Type 02</option>
                 <option value="Type 03">Type 03</option>
                 <option value="Type 04">Type 04</option>
@@ -122,7 +123,6 @@ function AddPost() {
               Add Workout
             </button>
           </form>
-          {error && <div className="alert alert-danger">{error}</div>}
         </div>
       </div>
     </div>
