@@ -62,7 +62,7 @@ const WorkoutPlansPage = () => {
               type="text"
               value={routine}
               onChange={(e) => handleRoutineChange(index, e.target.value)}
-              placeholder={` Routine ${index + 1}`}//done
+              placeholder={` Routine ${index + 1}`}
             />
           ))}
           <button type="button" onClick={handleAddRoutine}>Add Routine</button>
