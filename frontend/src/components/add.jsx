@@ -14,7 +14,6 @@ function AddPost() {
   const [randistance, setrandistance] = useState("");
   const [weightlifted, setweightlifted] = useState("");
   const [error, setError] = useState(null);
-  const navigate = useNavigate();
 
   const handleSubmit = async (event) => {
     event.preventDefault();
@@ -33,6 +32,7 @@ function AddPost() {
       setStudentAddress("");
       setStatus("");
       setnoofpushups("");
+      setrandistance("");
       setweightlifted("");
       navigate("/");
     } catch (error) {
