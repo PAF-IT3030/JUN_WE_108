@@ -13,7 +13,7 @@ const App = () => {
       <Routes>
         <Route path="/api/workout-plans" element={<WorkoutPlansPage />} />
         <Route path="/workout-plan-list" element={<WorkoutPlanList />} />
-        <Route path="/all-workout-plans-" element={<AllWorkoutPlans />} />//ssss
+        <Route path="/all-workout-plans-" element={<AllWorkoutPlans />} />
       </Routes>
     </Router>
   );
