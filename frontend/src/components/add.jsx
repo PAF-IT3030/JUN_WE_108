@@ -45,9 +45,9 @@ function AddPost() {
     <div className="container">
       <div className="row justify-content-center">
         <div className="col-md-6">
+          <h1>Add Workout Details</h1>
           <form onSubmit={handleSubmit}>
             <div className="form-group">
-              <label for="studentname">Date</label>
               <input
                 type="date"
                 className="form-control"
