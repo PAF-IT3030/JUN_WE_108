@@ -50,6 +50,7 @@ function AddPost() {
             <div className="form-group">
               <label for="studentname">Date</label>
               <input
+                type="date"
                 className="form-control"
                 id="studentname"
                 value={studentname}
@@ -58,7 +59,6 @@ function AddPost() {
               />
             </div>
             <div className="form-group">
-              <label for="studentaddress">Caption</label>
               <input
                 type="text"
                 className="form-control"
