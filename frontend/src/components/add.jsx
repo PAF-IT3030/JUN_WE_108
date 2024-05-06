@@ -26,6 +26,7 @@ function AddPost() {
         status,
         noofpushups,
         randistance,
+        weightlifted,
       });
       alert("Student Added Successfully!");
       setStudentName("");
@@ -41,7 +42,6 @@ function AddPost() {
   };
 
   return (
-    <div className="container">
       <div className="row justify-content-center">
         <div className="col-md-6">
           <h1>Add Workout Details</h1>
