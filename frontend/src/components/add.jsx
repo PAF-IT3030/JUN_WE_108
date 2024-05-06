@@ -1,3 +1,4 @@
+import axios from "axios";
 import { useState } from "react";
 import React from "react";
 import { useNavigate } from "react-router-dom"; // Import useNavigate
@@ -44,7 +45,6 @@ function AddPost() {
     <div className="container">
       <div className="row justify-content-center">
         <div className="col-md-6">
-          <h1>Add Workout Details</h1>
           <form onSubmit={handleSubmit}>
             <div className="form-group">
               <label for="studentname">Date</label>
