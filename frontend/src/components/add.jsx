@@ -21,6 +21,7 @@ function AddPost() {
 
     try {
       await axios.post(`${API_URL}/save`, {
+        studentname,
         studentaddress,
         status,
         noofpushups,
@@ -32,7 +33,6 @@ function AddPost() {
       setStudentAddress("");
       setStatus("");
       setnoofpushups("");
-      setrandistance("");
       setweightlifted("");
       navigate("/");
     } catch (error) {
