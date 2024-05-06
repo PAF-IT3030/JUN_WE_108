@@ -1,4 +1,3 @@
-import axios from "axios";
 import { useState } from "react";
 import React from "react";
 import { useNavigate } from "react-router-dom"; // Import useNavigate
@@ -13,6 +12,7 @@ function AddPost() {
   const [noofpushups, setnoofpushups] = useState("");
   const [randistance, setrandistance] = useState("");
   const [weightlifted, setweightlifted] = useState("");
+  const [error, setError] = useState(null);
   const navigate = useNavigate();
 
   const handleSubmit = async (event) => {
