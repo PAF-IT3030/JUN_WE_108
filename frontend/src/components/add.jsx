@@ -74,6 +74,7 @@ function AddPost() {
               <select
                 className="form-control"
                 id="status"
+                value={status}
                 onChange={(event) => setStatus(event.target.value)}
                 required
               >
@@ -110,7 +111,6 @@ function AddPost() {
             <div className="form-group">
               <label for="weightlifted">Weight Lifted</label>
               <input
-                type="number"
                 className="form-control"
                 id="weightlifted"
                 value={weightlifted}
