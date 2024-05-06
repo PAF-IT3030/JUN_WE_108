@@ -111,6 +111,7 @@ function AddPost() {
             <div className="form-group">
               <label for="weightlifted">Weight Lifted</label>
               <input
+                type="number"
                 className="form-control"
                 id="weightlifted"
                 value={weightlifted}
@@ -118,9 +119,7 @@ function AddPost() {
                 required
               />
             </div>
-            <button type="submit" className="btn btn-primary mt-4">
-              Add Workout
-            </button>
+          
           </form>
           {error && <div className="alert alert-danger">{error}</div>}
         </div>
