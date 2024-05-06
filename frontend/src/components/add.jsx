@@ -35,7 +35,6 @@ function AddPost() {
       setnoofpushups("");
       setrandistance("");
       setweightlifted("");
-      navigate("/");
     } catch (error) {
       setError("Error saving details");
     }
