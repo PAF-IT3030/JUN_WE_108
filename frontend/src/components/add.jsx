@@ -4,7 +4,6 @@ import React from "react";
 import { useNavigate } from "react-router-dom"; // Import useNavigate
 
 const API_URL =
-  process.env.REACT_APP_API_URL || "http://localhost:8089/api/v1/student";
 
 function AddPost() {
   const [studentname, setStudentName] = useState("");
@@ -123,6 +122,7 @@ function AddPost() {
               Add Workout
             </button>
           </form>
+          {error && <div className="alert alert-danger">{error}</div>}
         </div>
       </div>
     </div>
