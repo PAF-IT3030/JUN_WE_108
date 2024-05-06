@@ -4,6 +4,7 @@ import axios from "axios";
 import Swal from 'sweetalert2';
 import Header from '../components/Header';
 import { useNavigate } from "react-router-dom";
+import backgroundImage from '../images/123.jpg';
 import { v4 as uuidv4 } from 'uuid';
 
 
@@ -50,19 +51,20 @@ function AddDoc() {
     }
 
     return (
+        <div>
+           
 
-        <div style={{
-            background: "#010117",
-            backgroundSize: 'cover',
-            minHeight: '110vh',
-            backgroundPosition: 'center center',
-            backgroundRepeat: 'no-repeat',
-            backgroundAttachment: 'fixed',
+            <div style={{
+                backgroundImage: `url(${backgroundImage})`, // Use imported image variable
+                backgroundSize: 'cover', // Changed to 'cover' to fill the entire screen
+                minHeight: '102vh', // Changed to vh to ensure full viewport height
+                backgroundPosition: 'center center',
+                backgroundRepeat: 'no-repeat',
+                backgroundAttachment: 'fixed',
+            }}>
+                 <Header />
 
-        }}>
-            <Header />
-
-            <nav className="navbar navbar-expand-lg " style={{ backgroundColor: "#072b52" }}>
+            <nav className="navbar navbar-expand-lg" style={{ backgroundColor: "rgba(7, 43, 82, 0.5)", backdropFilter: "blur(2px)" }}>
                 <div className="container-fluid">
 
 
@@ -81,23 +83,23 @@ function AddDoc() {
                 </div>
             </nav>
 
-            <div className="col-lg-9-mt-2 mb-2 p-3 pt-4 text-white">
-                <h1 style={{ textAlign: "left", paddingLeft: "90px" }}>Add New WorkOut</h1>
-            </div>
+                <div className="col-lg-9-mt-2 mb-2 p-3 pt-4 text-white">
+                    <h1 style={{ textAlign: "left", paddingLeft: "90px" }}>Add New WorkOut</h1>
+                </div>
 
-            <div className="container shadow-lg p-3 mb-5  rounded" style={{ background: "#04052e" }}>
+                <div className="container shadow-lg p-3 mb-5  rounded" style={{ backgroundColor: "rgba(7, 43, 82, 0.5)", backdropFilter: "blur(2px)"  }}>
 
-                <form onSubmit={sendData}>
+                    <form onSubmit={sendData}>
 
-                    <div className="mb-3 text-white ">
-                        <label for="fullname" className="form-label">Topic</label>
-                        <input type="text" className="form-control ml-2 mr-5" id="Topic" placeholder="Enter topic"
-                            required onChange={(e) => {
+                        <div className="mb-3 text-white ">
+                            <label for="fullname" className="form-label">Topic</label>
+                            <input type="text" className="form-control ml-2 mr-5" id="Topic" placeholder="Enter topic"
+                                required onChange={(e) => {
 
-                                setTitle(e.target.value);
-                            }} />
+                                    setTitle(e.target.value);
+                                }} />
 
-                    </div>
+                        </div>
 
 
 
@@ -119,12 +121,13 @@ function AddDoc() {
                             />
                         </div>
 
-                    <button type="submit" className="btn btn-primary btn-lg">Submit</button>
+                        <button type="submit" className="btn btn-primary btn-lg">Submit</button>
 
 
-                </form>
+                    </form>
 
 
+                </div>
             </div>
         </div>
     )

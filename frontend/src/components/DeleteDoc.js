@@ -5,6 +5,8 @@ import { Link } from "react-router-dom";
 import Swal from 'sweetalert2';
 import { useNavigate } from "react-router-dom";
 import Header from '../components/Header';
+import backgroundImage from '../images/2222.jpg';
+
 
 export default function DeleteDoc() {
     const [doc, setDoc] = useState({});
@@ -54,17 +56,16 @@ export default function DeleteDoc() {
 
     return (
         <div style={{
-            background: "#010117",
-            backgroundSize: 'cover',
-            minHeight: '100vh',
+            backgroundImage: `url(${backgroundImage})`, // Use imported image variable
+            backgroundSize: 'cover', // Changed to 'cover' to fill the entire screen
+            minHeight: '102vh', // Changed to vh to ensure full viewport height
             backgroundPosition: 'center center',
             backgroundRepeat: 'no-repeat',
             backgroundAttachment: 'fixed',
-
         }}>
             <Header />
             <div>
-                <nav className="navbar navbar-expand-lg " style={{ backgroundColor: "#072b52" }}>
+                <nav className="navbar navbar-expand-lg" style={{ backgroundColor: "rgba(7, 43, 82, 0.5)", backdropFilter: "blur(2px)" }}>
                     <div className="container-fluid">
 
 
@@ -92,7 +93,7 @@ export default function DeleteDoc() {
 
 
                     ) : (doc && Object.keys(doc).length !== 0 ? (
-                        <div className="container shadow-lg p-3 mb-5  rounded text-white " style={{ background: "#04052e" }}>
+                        <div className="container shadow-lg p-3 mb-5  rounded" style={{ backgroundColor: "rgba(7, 43, 82, 0.5)", backdropFilter: "blur(2px)" }}>
                             <form onSubmit={handleDelete}>
 
                                 <div className="mb-3 text-white">

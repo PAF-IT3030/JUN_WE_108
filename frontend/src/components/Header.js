@@ -3,7 +3,8 @@ import { Link } from "react-router-dom";
 
 function Header() {
   return (
-    <nav className="navbar navbar-expand-lg navbar-dark" style={{backgroundColor: "#030323"}}>
+    <nav className="navbar navbar-expand-lg navbar-dark" style={{backgroundColor: "rgb(0, 71, 122, 0.5)", backdropFilter: "blur(2px)"}}> 
+ 
       <div className="container-fluid">
         <a className="navbar-brand" href="#">
           <img src="" alt="Logo" width="128" height="55" />

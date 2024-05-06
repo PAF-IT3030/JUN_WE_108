@@ -3,6 +3,7 @@ import axios from "axios";
 import { Link } from "react-router-dom";
 import Swal from 'sweetalert2';
 import Header from '../components/Header';
+import backgroundImage from '../images/1234.jpg';
 
 
 
@@ -33,19 +34,18 @@ export default function AllDoc() {
     return (
 
         <div style={{
-            background: "#010117",
-            backgroundSize: 'cover',
-            minHeight: '100vh',
+            backgroundImage: `url(${backgroundImage})`, // Use imported image variable
+            backgroundSize: 'cover', // Changed to 'cover' to fill the entire screen
+            minHeight: '102vh', // Changed to vh to ensure full viewport height
             backgroundPosition: 'center center',
             backgroundRepeat: 'no-repeat',
             backgroundAttachment: 'fixed',
-
         }}>
             <Header />
 
 
             <div>
-                <nav className="navbar navbar-expand-lg " style={{ backgroundColor: "#072b52" }}>
+            <nav className="navbar navbar-expand-lg" style={{ backgroundColor: "rgba(7, 43, 82, 0.5)", backdropFilter: "blur(2px)" }}>
                     <div className="container-fluid">
 
 
@@ -76,7 +76,7 @@ export default function AllDoc() {
 
 
 
-
+                <div className="container shadow-lg p-3 mb-5  rounded" style={{ backgroundColor: "rgba(7, 43, 82, 0.5)", backdropFilter: "blur(2px)"  }}>
 
                 <div className="container">
                     <table className="table table-striped">
@@ -111,6 +111,7 @@ export default function AllDoc() {
                             ))}
                         </tbody>
                     </table>
+                </div>
                 </div>
 
 

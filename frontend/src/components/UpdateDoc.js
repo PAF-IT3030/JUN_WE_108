@@ -4,6 +4,7 @@ import { Link } from "react-router-dom";
 import { useParams } from 'react-router-dom';
 import Swal from 'sweetalert2';
 import { useNavigate } from "react-router-dom";
+import backgroundImage from '../images/1111.jpg';
 import Header from '../components/Header';
 
 export default function UpdateQuiz() {
@@ -66,16 +67,15 @@ export default function UpdateQuiz() {
 
     return (
         <div style={{
-            background: "#010117",
-            backgroundSize: 'cover',
-            minHeight: '160vh',
+            backgroundImage: `url(${backgroundImage})`, // Use imported image variable
+            backgroundSize: 'cover', // Changed to 'cover' to fill the entire screen
+            minHeight: '102vh', // Changed to vh to ensure full viewport height
             backgroundPosition: 'center center',
             backgroundRepeat: 'no-repeat',
             backgroundAttachment: 'fixed',
-
         }}>
             <Header />
-            <nav className="navbar navbar-expand-lg " style={{ backgroundColor: "#072b52" }}>
+            <nav className="navbar navbar-expand-lg" style={{ backgroundColor: "rgba(7, 43, 82, 0.5)", backdropFilter: "blur(2px)" }}>
                 <div className="container-fluid">
 
 
@@ -96,7 +96,7 @@ export default function UpdateQuiz() {
                 <h1 style={{ textAlign: "left", paddingLeft: "90px" }}>Update WorkOut</h1>
             </div>
 
-            <div className="container shadow-lg p-3 mb-5  rounded" style={{ background: "#04052e" }}>
+            <div className="container shadow-lg p-3 mb-5  rounded" style={{ backgroundColor: "rgba(7, 43, 82, 0.5)", backdropFilter: "blur(2px)"  }}>
 
                 {loading ? (
                     <div>Loading...</div>
